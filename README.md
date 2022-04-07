@@ -1,5 +1,8 @@
-# s2wb50nalla
+Class - vehicle class vehicles{ constructor(name, type, noofpassangers){
+     this.name = name;  
+    this.type = type;
+    this.noofpassangers = noofpassangers;
+    }
+    }
 
 
-using pug templates to dynamically
-generate web pages on the server side.
