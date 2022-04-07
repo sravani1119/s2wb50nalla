@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  - let vehicle = [{name:"Ship", type:"WaterWay", noofpassengers: 1000},{name:"Car", type:"RoadWay", noofpassengers: 80},{name:"Etihad", type:"Airways", noofpassengers: 300}]
+  div(class="container-fluid") 
+   div(class="row")
+    each vehicle,index in vehicle
+        div(class="col-sm-2" onclick=`buy(${index})`) name: #{vehicle.name} , type: #{vehicle.type} , noofpassengers: #{vehicle.noofpassengers}
